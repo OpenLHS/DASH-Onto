@@ -9,7 +9,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/DASH-Onto.owl>
-Import(<http://purl.obolibrary.org/obo/DASH-Onto/releases/2023-07-28/imports/OpenLHS-Core_import.owl>)
 Annotation(dcterms:description "None"@en)
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Data Access Support Hub Ontology"@en)
@@ -87,6 +86,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/DASH-Onto_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DASH-Onto_0000071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DASH-Onto_0000072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/DASH-Onto_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))

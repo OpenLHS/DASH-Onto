@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/DASH-Onto/DASH-Onto-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/DASH-Onto/DASH-Onto-base.owl"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,9 +12,9 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DASH-Onto/DASH-Onto-base.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2023-07-28/DASH-Onto-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:description>None</dcterms:description>
+        <dcterms:description xml:lang="en">None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <dcterms:title>Data Access Support Hub Ontology</dcterms:title>
+        <dcterms:title xml:lang="en">Data Access Support Hub Ontology</dcterms:title>
         <owl:versionInfo>2023-07-28</owl:versionInfo>
     </owl:Ontology>
     
@@ -30,6 +31,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
@@ -39,7 +46,7 @@
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
+        <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -47,7 +54,7 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>license</rdfs:label>
+        <rdfs:label xml:lang="en">license</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -55,7 +62,7 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
+        <rdfs:label xml:lang="en">title</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -71,11 +78,802 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DASH-ONTO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-ONTO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a project research group seeks to obtain permission to have access to data items from a data custodian.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary: &apos;application process&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Application for data to data custodian</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:comment xml:lang="en">Lucid: Plan</rdfs:comment>
+        <rdfs:label xml:lang="en">Project component activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A process which has as expected output a draft of an agreement.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: agreements (AGREE)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Agreement drafting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000003"/>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC Agreement drafting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000003"/>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Agreement drafting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which the required parties sign an agreement proposal to signify their agreement with the proposed terms. The resulting document is an agreement document.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary: agreement proposal signature</rdfs:comment>
+        <rdfs:label xml:lang="en">Agreement signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">An agreement signature where the required parties are a data custodian and a project research group.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Ont: proposed to cover DC/TEA bifurcation.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC Agreement signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">An agreement signature where the required parties are those data custodians contributing to the TEA and a project research group.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Ont: proposed to cover DC/TEA bifurcation.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Agreement signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <rdfs:comment xml:lang="en">Lucid: DASH coordination</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Access Request completion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A process having as participants DASH members and DASH users. It includes guided exploration and identification of services desired from project workflow contributors.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary: &apos;DASH guidance&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH-PRG Guidance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000011"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH Project advice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a DASH User acquires information about metadata, data metrics and data provenance elements of data items, as well as selection functions.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: DASH Guidance: Data Exploration (DATX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary: &apos;guided data exploration&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH Data advice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a DASH User acquires information about services offered by a data custodian.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: DASH Guidance: Support Exploration (SUPX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary: &apos;guided support exploration&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH Support advice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000012"/>
+        <rdfs:comment xml:lang="en">Ont: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Scored data custodian cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a DASH User acquires information about eligibility requirements from a data custodian.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: DASH Guidance: DASH Eligibility (DEL)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary: &apos;guided eligibility exploration&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH eligibility advice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A process that takes the results of site Eligibility Reviews and, based on discussions with the research group, comes to a final decision on whether a project should proceed.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH Eligibility decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A process that has as a result a final decision regarding a set of data custodian feasibility reviews.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Ont/Glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH Feasibility decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <rdfs:comment xml:lang="en">DASH: DASH Q&amp;A (QUEST)</rdfs:comment>
+        <rdfs:comment xml:lang="en">DASH: Guidance catch-all (DG)</rdfs:comment>
+        <rdfs:comment xml:lang="en">DASH: Project on hold (PHOLD)</rdfs:comment>
+        <rdfs:comment xml:lang="en">DASH: issues (ISS)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">DASH Oversight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Process DASH data custodian instruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A process to produce and validate a DC specfiic project dataset.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Data Assembly (DATA)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
+        <rdfs:comment xml:lang="en">DASH: agreements (AGREE)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian agreement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
+        <rdfs:comment xml:lang="en">DASH: Governance (GOV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
+        <rdfs:comment xml:lang="en">DASH: Feasibility review (FREV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:comment xml:lang="en">Project feasibility</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian project feasibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a D-SPD is copied to another organisation&apos;s infrastructure or a TEA.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Data placement (DPLACE)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data placement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a dataset is generated by applying a function to a set of datasets.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data processing generating a new data asset using a selection function which has as input a set of datasets.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data selection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000028"/>
+        <obo:IAO_0000115 xml:lang="en">A data selection by which a project cohort identifier list is generated.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: cohort exploration (CEXP)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian Project cohort preparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data processing generating a new data asset using a transformation function which has as input a set of datasets.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A data processing generating a new data asset using a transformation function which has as input a set of datasets.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian data preparation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A sub-process of data assembly by which privacy enhancing technique functions are applied by a data custodian technical team to the dataset which is the output of the data preparation.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Data custodian PET processing</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian privacy enhancing technique processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A data processing by which a D-SPD is transformed by project analysts.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Project analysis data processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which one or more project research group members demonstrate knowledge of the requirements that a data custodian places on the use and handling of D-SPD provided to ensure continued good governance of that D-SPD and associated project analysis and publication.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Orientation validation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <rdfs:comment xml:lang="en">DASH: DASH Project Closure (PCLOSE)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Project debrief</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Project research group activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Process DASH project research group instruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary: Project publication drafting</rdfs:comment>
+        <rdfs:label xml:lang="en">Knowledge production</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A process that takes the results of site Feasibility Reviews and, based on discussions with the project research group, comes to a final decision on whether a project should proceed to a formal data access request and governance review.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Research Group decision (RGDEC)</rdfs:comment>
+        <rdfs:label xml:lang="en">Project decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A process enabling a PRG to analyse one or more D-SPD as input.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Project analysis (PANL)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary. Also: &apos;Project analysis data processing&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">Project Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a project cohort preparation takes place and the size of a project cohort identifier list is evaluated in the context of a project protocol.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Project Cohort evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <rdfs:comment xml:lang="en">Ont: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Project Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000042"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Project publication drafting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A process in which a set of artefacts are used by an organisation team to establish whether a condition required by a process is met.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary.</rdfs:comment>
+        <rdfs:label xml:lang="en">Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed</rdfs:comment>
+        <rdfs:label xml:lang="en">DC Agreement resource and cost review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">DC Agreement review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a data controller team which evaluates project protocol alignment with its policies and, if applicable, delegated data control agreements</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Governance - external (GOVEX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">DASH: agreements - external (AGREEEX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data controller review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">DASH: Feasibility review (FREV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian feasibility review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
+        <rdfs:comment xml:lang="en">Ont: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Access Request Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a data custodian team in collaboration with a project research group which assesses whether the [cohort] data item requirements defined by a project protocol can be fullfilled by a data custodian.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data availability cohort review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a data custodian team in collaboration with a project research group which assesses whether the [extract] data item requirements defined by a project protocol can be fullfilled by a data custodian.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data availability extract review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
+        <obo:IAO_0000115 xml:lang="en">An eligibility review performed by a data custodian team which uses custodian-defined governance criteria to establish the right of the project research group to have a project protocol evaluated by the DCG team.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Eligibility Review (ELREV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data eligibility review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a data custodian team which determines costs and resources required to provide access to data items, and other requested services options (if applicable).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">DASH: Cost and resource review (COSTREV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Data estimated resource cost review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">DASH: Governance (GOV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">Data custodian governance review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <obo:IAO_0000115 xml:lang="en">A application element review which ensures that appropriate documentation arising from an ethics committee assessment was submitted as part of an application process.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Ethics assessment review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <obo:IAO_0000115 xml:lang="en">A application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Funding review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Non-disclosure agreement review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <obo:IAO_0000115 xml:lang="en">An review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Privacy, Confidentiality and Security Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Privacy Enhancing Technique Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <obo:IAO_0000115 xml:lang="en">A review conducted by a data controller team to evaluate whether a project analysis data output can be transferred to a different data custodian as requested by a PRG.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Project analysis data output review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
+        <obo:IAO_0000115 xml:lang="en">An application element review which ensures that appropriate documentation arising from a Scientific Peer review assessment was submitted as part of an application process.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Scientific assessment review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <obo:IAO_0000115 xml:lang="en">A review conducted by a organisation team to evaluate whether a project publication candidate can be made available outside the project research group.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
+        <rdfs:label xml:lang="en">Project publication review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Agreement resource and cost review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Agreement review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA feasibility review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA eligibility review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA estimated resource and cost review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
+        <rdfs:comment xml:lang="en">DASH: Requested services review (SREV)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA support review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">Trusted Environment for Analysis activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000069"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Agreement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000069"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000069"/>
+        <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
+        <rdfs:label xml:lang="en">TEA Project feasibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:comment xml:lang="en">DASH: DASH Guidance: Project Intake (PINT)
+DASH: DASH Project Registration (PREG)
+Ont: to differentiate DASH application initiation from DC application initiation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Project submission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
 </rdf:RDF>
 
 
