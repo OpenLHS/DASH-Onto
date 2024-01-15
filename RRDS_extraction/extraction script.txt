@@ -1,0 +1,1 @@
+robot extract -i DASH-Onto.owl -T IRI_list.txt --force true --copy-ontology-annotations true --individuals exclude --method subset -o RRDS.owl
