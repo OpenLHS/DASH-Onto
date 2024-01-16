@@ -263,10 +263,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000020> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000021> (Process DASH data custodian instruction)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "A Data custodian activity that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "A DASH instruction to a DC, sent by an agreed method, requesting a DC-related project component activity be completed."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "Lucid: workflow"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "Process DASH data custodian instruction"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000021> <http://purl.obolibrary.org/obo/DASH-Onto_0000020>)
+SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000021> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000022> (Data assembly)
 
@@ -378,10 +378,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000036> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000037> (Process DASH project research group instruction)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "A Project research group activity that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "A DASH instruction to a PRG, sent by an agreed method, requesting a PRG-related project component activity be completed."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "Lucid: workflow"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "Process DASH project research group instruction"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000037> <http://purl.obolibrary.org/obo/DASH-Onto_0000036>)
+SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000037> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000038> (Knowledge production)
 
@@ -636,37 +636,39 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000073> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000080> (Wait for signal)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000080> "TBD."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000080> "Wait for signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000080> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000081> (Send signal)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000081> "TBD."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000081> "Send signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000081> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
-# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000082> (Data custodian PRG orientation)
+# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000082> (Project research group orientation validation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000082> "TBD."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000082> "Data custodian PRG orientation"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000082> <http://purl.obolibrary.org/obo/DASH-Onto_0000020>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000082> "A project research group activity by which one or more project research group members demonstrate knowledge of the requirements that a data custodian places on the use and handling of D-SPD provided to ensure continued good governance of that D-SPD and associated project analysis and publication."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000082> "Project research group orientation validation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000082> <http://purl.obolibrary.org/obo/DASH-Onto_0000036>)
 
-# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000083> (DASH TEA instruction)
+# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000083> (Process DASH trusted environment for analysis instruction)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "A DASH activity that is TBD."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "DASH TEA instruction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "A DASH instruction to a DC, sent by an agreed method, requesting a TEA-related project component activity be completed."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "Process DASH trusted environment for analysis instruction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000083> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
 
-# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000084> (HDASH TEA monitor)
+# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000084> (DASH TEA Monitor process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000084> "A DASH activity that is TBD."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000084> "HDASH TEA monitor"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000084> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000084> "A project component activity that permits DASH to restart DC-specific TEA activities and communicate this fact to the DC, the latter taking appropriate actions in response."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000084> "DASH TEA Monitor process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000084> <http://purl.obolibrary.org/obo/DASH-Onto_0000002>)
 
-# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000085> (HDASH DC monitor)
+# Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000085> (DASH DC Monitor process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000085> "A DASH activity that is TBD."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000085> "HDASH DC monitor"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000085> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000085> "A project component activity that permits DASH to restart DC-specific DC activities and communicate this fact to the DC, the latter taking appropriate actions in response."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000085> "DASH DC Monitor process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000085> <http://purl.obolibrary.org/obo/DASH-Onto_0000002>)
 
 
 )
