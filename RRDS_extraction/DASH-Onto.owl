@@ -16,11 +16,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DASH-Onto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-01-15/DASH-Onto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-01-16/DASH-Onto.owl"/>
         <dcterms:description xml:lang="en">None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title xml:lang="en">Data Access Support Hub Ontology</dcterms:title>
-        <owl:versionInfo>2024-01-15</owl:versionInfo>
+        <owl:versionInfo>2024-01-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3304,8 +3304,8 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A Data custodian activity that is TBD.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A DASH instruction to a DC, sent by an agreed method, requesting a DC-related project component activity be completed.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
         <rdfs:label xml:lang="en">Process DASH data custodian instruction</rdfs:label>
     </owl:Class>
@@ -3483,8 +3483,8 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
-        <obo:IAO_0000115 xml:lang="en">A Project research group activity that is TBD.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A DASH instruction to a PRG, sent by an agreed method, requesting a PRG-related project component activity be completed.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
         <rdfs:label xml:lang="en">Process DASH project research group instruction</rdfs:label>
     </owl:Class>
@@ -3890,6 +3890,7 @@ Ont: to differentiate DASH application initiation from DC application initiation
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Wait for signal</rdfs:label>
     </owl:Class>
     
@@ -3899,6 +3900,7 @@ Ont: to differentiate DASH application initiation from DC application initiation
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Send signal</rdfs:label>
     </owl:Class>
     
@@ -3907,9 +3909,9 @@ Ont: to differentiate DASH application initiation from DC application initiation
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Data custodian PRG orientation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A project research group activity by which one or more project research group members demonstrate knowledge of the requirements that a data custodian places on the use and handling of D-SPD provided to ensure continued good governance of that D-SPD and associated project analysis and publication.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Project research group orientation validation</rdfs:label>
     </owl:Class>
     
 
@@ -3918,8 +3920,8 @@ Ont: to differentiate DASH application initiation from DC application initiation
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
-        <obo:IAO_0000115 xml:lang="en">A DASH activity that is TBD.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">DASH TEA instruction</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A DASH instruction to a DC, sent by an agreed method, requesting a TEA-related project component activity be completed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Process DASH trusted environment for analysis instruction</rdfs:label>
     </owl:Class>
     
 
@@ -3927,9 +3929,9 @@ Ont: to differentiate DASH application initiation from DC application initiation
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000084 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
-        <obo:IAO_0000115 xml:lang="en">A DASH activity that is TBD.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">HDASH TEA monitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A project component activity that permits DASH to restart DC-specific TEA activities and communicate this fact to the DC, the latter taking appropriate actions in response.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">DASH TEA Monitor process</rdfs:label>
     </owl:Class>
     
 
@@ -3937,9 +3939,9 @@ Ont: to differentiate DASH application initiation from DC application initiation
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
-        <obo:IAO_0000115 xml:lang="en">A DASH activity that is TBD.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">HDASH DC monitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A project component activity that permits DASH to restart DC-specific DC activities and communicate this fact to the DC, the latter taking appropriate actions in response.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">DASH DC Monitor process</rdfs:label>
     </owl:Class>
     
 
