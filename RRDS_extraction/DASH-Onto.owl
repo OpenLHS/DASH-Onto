@@ -16,11 +16,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DASH-Onto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-01-16/DASH-Onto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-01-17/DASH-Onto.owl"/>
         <dcterms:description xml:lang="en">None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title xml:lang="en">Data Access Support Hub Ontology</dcterms:title>
-        <owl:versionInfo>2024-01-16</owl:versionInfo>
+        <owl:versionInfo>2024-01-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3696,7 +3696,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
-        <obo:IAO_0000115 xml:lang="en">A application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Funding review</rdfs:label>
     </owl:Class>
@@ -3718,7 +3718,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
-        <obo:IAO_0000115 xml:lang="en">An review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Privacy, Confidentiality and Security Review</rdfs:label>
     </owl:Class>
@@ -3890,7 +3890,7 @@ Ont: to differentiate DASH application initiation from DC application initiation
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity waits until a specific signal is available through a specified channel; then ends.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Wait for signal</rdfs:label>
     </owl:Class>
     
@@ -3900,7 +3900,7 @@ Ont: to differentiate DASH application initiation from DC application initiation
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity sends a specific signal to a specified channel.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Send signal</rdfs:label>
     </owl:Class>
     

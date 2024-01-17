@@ -12,7 +12,7 @@
         <terms:description xml:lang="en">None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title xml:lang="en">Data Access Support Hub Ontology</terms:title>
-        <owl:versionInfo>2024-01-16</owl:versionInfo>
+        <owl:versionInfo>2024-01-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -357,7 +357,7 @@
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000056">
-        <obo:IAO_0000115 xml:lang="en">A application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Funding review</rdfs:label>
     </owl:Class>
@@ -377,7 +377,7 @@
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000058">
-        <obo:IAO_0000115 xml:lang="en">An review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Privacy, Confidentiality and Security Review</rdfs:label>
     </owl:Class>
@@ -468,7 +468,7 @@
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000080">
-        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity waits until a specific signal is available through a specified channel; then ends.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Wait for signal</rdfs:label>
     </owl:Class>
     
@@ -477,7 +477,7 @@
     <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000081">
-        <obo:IAO_0000115 xml:lang="en">TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity sends a specific signal to a specified channel.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Send signal</rdfs:label>
     </owl:Class>
     
