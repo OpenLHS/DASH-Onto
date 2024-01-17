@@ -514,7 +514,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000055> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000056> (Funding review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000056> "A application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000056> "An application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000056> "Glossary"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000056> "Funding review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000056> <http://purl.obolibrary.org/obo/DASH-Onto_0000054>)
@@ -528,7 +528,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000057> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000058> (Privacy, Confidentiality and Security Review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000058> "An review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000058> "A review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000058> "Glossary"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000058> "Privacy, Confidentiality and Security Review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000058> <http://purl.obolibrary.org/obo/DASH-Onto_0000054>)
@@ -636,13 +636,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000073> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000080> (Wait for signal)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000080> "TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000080> "A process by which a plan entity waits until a specific signal is available through a specified channel; then ends."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000080> "Wait for signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000080> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000081> (Send signal)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000081> "TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000081> "A process by which a plan entity sends a specific signal to a specified channel."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000081> "Send signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000081> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
