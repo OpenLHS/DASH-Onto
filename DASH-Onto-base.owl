@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DASH-Onto/DASH-Onto-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-01-17/DASH-Onto-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-01-31/DASH-Onto-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description xml:lang="en">None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title xml:lang="en">Data Access Support Hub Ontology</dcterms:title>
-        <owl:versionInfo>2024-01-17</owl:versionInfo>
+        <owl:versionInfo>2024-01-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -34,6 +34,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
@@ -115,7 +121,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000003"/>
-        <obo:IAO_0000115 xml:lang="en">An agreement drafting that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An agreement drafting done by the data custodian team.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">DC Agreement drafting</rdfs:label>
     </owl:Class>
@@ -126,7 +132,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000003"/>
-        <obo:IAO_0000115 xml:lang="en">An agreement drafting that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An agreement drafting done by the trusted environment analysis team.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA Agreement drafting</rdfs:label>
     </owl:Class>
@@ -235,7 +241,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000012"/>
-        <obo:IAO_0000115 xml:lang="en">A DASH project advice that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A process by which a DASH User evaluates the cost of services provided by a data custodian.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">Scored data custodian cost</rdfs:label>
     </owl:Class>
@@ -280,7 +286,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
-        <obo:IAO_0000115 xml:lang="en">A DASH activity that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A DASH activity corresponding to the global supervision of the project.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The output for the NextOperation can be:
+1 - for the OVR_PerformGuidance
+2 - for the OVR_CompleteDAR
+3 - for the OVR_EndProject</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">DASH: DASH Q&amp;A (QUEST)</rdfs:comment>
         <rdfs:comment xml:lang="en">DASH: Guidance catch-all (DG)</rdfs:comment>
         <rdfs:comment xml:lang="en">DASH: Project on hold (PHOLD)</rdfs:comment>
@@ -306,6 +316,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
         <obo:IAO_0000115 xml:lang="en">A DASH instruction to a DC, sent by an agreed method, requesting a DC-related project component activity be completed.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The output for the NextOperation can be:
+1 - for the DC_PerformFeasibility
+2 - for the DC_ProcessApplication
+3 - for the DC_SignAgreement
+4 - for the DC_AssemblyAndPlacement
+5 - for the DC_EndProject</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
         <rdfs:label xml:lang="en">Process DASH data custodian instruction</rdfs:label>
     </owl:Class>
@@ -462,7 +478,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">A project component activity that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A project component activity that is the review of the project upon completion..</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">DASH: DASH Project Closure (PCLOSE)</rdfs:comment>
         <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
         <rdfs:label xml:lang="en">Project debrief</rdfs:label>
@@ -485,6 +501,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
         <obo:IAO_0000115 xml:lang="en">A DASH instruction to a PRG, sent by an agreed method, requesting a PRG-related project component activity be completed.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The output for the NextOperation can be:
+1 - for the PRG_PerformProjectAnalysis
+2 - for the PRG_PerformKnowledgeProduction
+3 - for the PRG_EndProject</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">Lucid: workflow</rdfs:comment>
         <rdfs:label xml:lang="en">Process DASH project research group instruction</rdfs:label>
     </owl:Class>
@@ -572,7 +592,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000044"/>
-        <obo:IAO_0000115 xml:lang="en">A review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a data custodian team which evaluates project resource and cost as specified in the agreement.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed</rdfs:comment>
         <rdfs:label xml:lang="en">DC Agreement resource and cost review</rdfs:label>
     </owl:Class>
@@ -617,7 +637,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
-        <obo:IAO_0000115 xml:lang="en">A Data custodian feasibility review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A Data custodian feasibility review of the data access request for the project.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">Data Access Request Review</rdfs:label>
     </owl:Class>
@@ -707,7 +727,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
-        <obo:IAO_0000115 xml:lang="en">A Data custodian governance review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A Data custodian governance review of the non-disclosure agreement drafted for the project.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Non-disclosure agreement review</rdfs:label>
     </owl:Class>
@@ -729,7 +749,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000054"/>
-        <obo:IAO_0000115 xml:lang="en">A Data custodian governance review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A Data custodian governance review of the privacy enhancement techniques proposed for the project.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Privacy Enhancing Technique Review</rdfs:label>
     </owl:Class>
@@ -773,7 +793,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A TEA feasibility review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted evironment analysis team which evaluates project resource and cost as specified in the agreement.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA Agreement resource and cost review</rdfs:label>
     </owl:Class>
@@ -804,7 +824,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A TEA feasibility review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An eligibility review performed by a trusted environment for analysis team which uses custodian-defined governance criteria to establish the right of the project research group to have a project protocol evaluated by the DCG team.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA eligibility review</rdfs:label>
     </owl:Class>
@@ -815,7 +835,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A TEA feasibility review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted environment for analysis team which determines costs and resources required to provide access to data items, and other requested services options (if applicable).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA estimated resource and cost review</rdfs:label>
     </owl:Class>
@@ -826,7 +846,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A TEA feasibility review that is TBD.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted evironment analysis team which evaluates support for the project.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">DASH: Requested services review (SREV)</rdfs:comment>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA support review</rdfs:label>
@@ -921,6 +941,11 @@ Ont: to differentiate DASH application initiation from DC application initiation
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
         <obo:IAO_0000115 xml:lang="en">A DASH instruction to a DC, sent by an agreed method, requesting a TEA-related project component activity be completed.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The output for the NextOperation can be:
+1 - for the TEA_PerformFeasibility
+2 - for the TEA_ProcessApplication
+3 - for the TEA_SignAgreement
+4 - for the TEA_EndProject</obo:IAO_0000116>
         <rdfs:label xml:lang="en">Process DASH trusted environment for analysis instruction</rdfs:label>
     </owl:Class>
     
