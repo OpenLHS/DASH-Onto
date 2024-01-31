@@ -682,7 +682,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000048"/>
-        <obo:IAO_0000115 xml:lang="en">A review performed by a data custodian team which determines costs and resources required to provide access to data items, and other requested services options (if applicable).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a data custodian team which determines resources and cost required to provide access to data items, and other requested services options (if applicable).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">DASH: Cost and resource review (COSTREV)</rdfs:comment>
         <rdfs:comment xml:lang="en">Glossary</rdfs:comment>
         <rdfs:label xml:lang="en">Data estimated resource cost review</rdfs:label>
@@ -793,7 +793,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted evironment analysis team which evaluates project resource and cost as specified in the agreement.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted environment analysis team which evaluates project resource and cost as specified in the agreement.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA Agreement resource and cost review</rdfs:label>
     </owl:Class>
@@ -835,7 +835,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted environment for analysis team which determines costs and resources required to provide access to data items, and other requested services options (if applicable).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted environment for analysis team which determines resource and cost required to provide access to data items, and other requested services options (if applicable).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA estimated resource and cost review</rdfs:label>
     </owl:Class>
@@ -846,7 +846,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000065"/>
-        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted evironment analysis team which evaluates support for the project.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A review performed by a trusted environment analysis team which evaluates support for the project.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">DASH: Requested services review (SREV)</rdfs:comment>
         <rdfs:comment xml:lang="en">Ont/glossary: proposed.</rdfs:comment>
         <rdfs:label xml:lang="en">TEA support review</rdfs:label>
@@ -911,6 +911,9 @@ Ont: to differentiate DASH application initiation from DC application initiation
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity waits until a specific signal is available through a specified channel; then ends.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The output for the waitCondition can be:
+1 - for the signal SIG_HDASH_Intake_Good
+2 - for the signal SIG_HDASH_DAR_Good</obo:IAO_0000116>
         <rdfs:label xml:lang="en">Wait for signal</rdfs:label>
     </owl:Class>
     
@@ -921,6 +924,9 @@ Ont: to differentiate DASH application initiation from DC application initiation
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity sends a specific signal to a specified channel.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The output for the signalCondition can be:
+1 - for the signal SIG_HDASH_Intake_Good
+2 - for the signal SIG_HDASH_DAR_Good</obo:IAO_0000116>
         <rdfs:label xml:lang="en">Send signal</rdfs:label>
     </owl:Class>
     
