@@ -141,14 +141,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000003> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000004> (DC Agreement drafting)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000004> "An agreement drafting that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000004> "An agreement drafting done by the data custodian team."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000004> "Ont/glossary: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000004> "DC Agreement drafting"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000004> <http://purl.obolibrary.org/obo/DASH-Onto_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000005> (TEA Agreement drafting)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000005> "An agreement drafting that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000005> "An agreement drafting done by the trusted environment analysis team."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000005> "Ont/glossary: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000005> "TEA Agreement drafting"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000005> <http://purl.obolibrary.org/obo/DASH-Onto_0000003>)
@@ -217,7 +217,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000014> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000015> (Scored data custodian cost)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000015> "A DASH project advice that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000015> "A process by which a DASH User evaluates the cost of services provided by a data custodian."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000015> "Ont: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000015> "Scored data custodian cost"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000015> <http://purl.obolibrary.org/obo/DASH-Onto_0000012>)
@@ -246,7 +246,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000018> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000019> (DASH Oversight)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000019> "A DASH activity that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000019> "A DASH activity corresponding to the global supervision of the project."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/DASH-Onto_0000019> "The output for the NextOperation can be:
+1 - for the OVR_PerformGuidance
+2 - for the OVR_CompleteDAR
+3 - for the OVR_EndProject"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000019> "DASH: DASH Q&A (QUEST)"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000019> "DASH: Guidance catch-all (DG)"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000019> "DASH: Project on hold (PHOLD)"@en)
@@ -264,6 +268,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000020> <http://purl.oboli
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000021> (Process DASH data custodian instruction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "A DASH instruction to a DC, sent by an agreed method, requesting a DC-related project component activity be completed."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "The output for the NextOperation can be:
+1 - for the DC_PerformFeasibility
+2 - for the DC_ProcessApplication
+3 - for the DC_SignAgreement
+4 - for the DC_AssemblyAndPlacement
+5 - for the DC_EndProject"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "Lucid: workflow"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000021> "Process DASH data custodian instruction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000021> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
@@ -364,7 +374,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000034> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000035> (Project debrief)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000035> "A project component activity that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000035> "A project component activity that is the review of the project upon completion.."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000035> "DASH: DASH Project Closure (PCLOSE)"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000035> "Lucid: workflow"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000035> "Project debrief"@en)
@@ -379,6 +389,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000036> <http://purl.oboli
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000037> (Process DASH project research group instruction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "A DASH instruction to a PRG, sent by an agreed method, requesting a PRG-related project component activity be completed."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "The output for the NextOperation can be:
+1 - for the PRG_PerformProjectAnalysis
+2 - for the PRG_PerformKnowledgeProduction
+3 - for the PRG_EndProject"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "Lucid: workflow"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000037> "Process DASH project research group instruction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000037> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
@@ -434,7 +448,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000044> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000045> (DC Agreement resource and cost review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000045> "A review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000045> "A review performed by a data custodian team which evaluates project resource and cost as specified in the agreement."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000045> "Ont/glossary: proposed"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000045> "DC Agreement resource and cost review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000045> <http://purl.obolibrary.org/obo/DASH-Onto_0000044>)
@@ -463,7 +477,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000048> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000049> (Data Access Request Review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000049> "A Data custodian feasibility review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000049> "A Data custodian feasibility review of the data access request for the project."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000049> "Ont: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000049> "Data Access Request Review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000049> <http://purl.obolibrary.org/obo/DASH-Onto_0000048>)
@@ -521,7 +535,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000056> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000057> (Non-disclosure agreement review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000057> "A Data custodian governance review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000057> "A Data custodian governance review of the non-disclosure agreement drafted for the project."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000057> "Glossary"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000057> "Non-disclosure agreement review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000057> <http://purl.obolibrary.org/obo/DASH-Onto_0000054>)
@@ -535,7 +549,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000058> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000059> (Privacy Enhancing Technique Review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000059> "A Data custodian governance review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000059> "A Data custodian governance review of the privacy enhancement techniques proposed for the project."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000059> "Glossary"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000059> "Privacy Enhancing Technique Review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000059> <http://purl.obolibrary.org/obo/DASH-Onto_0000054>)
@@ -563,7 +577,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000062> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000063> (TEA Agreement resource and cost review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000063> "A TEA feasibility review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000063> "A review performed by a trusted evironment analysis team which evaluates project resource and cost as specified in the agreement."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000063> "Ont/glossary: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000063> "TEA Agreement resource and cost review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000063> <http://purl.obolibrary.org/obo/DASH-Onto_0000065>)
@@ -582,21 +596,21 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000065> <http://purl.oboli
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000066> (TEA eligibility review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000066> "A TEA feasibility review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000066> "An eligibility review performed by a trusted environment for analysis team which uses custodian-defined governance criteria to establish the right of the project research group to have a project protocol evaluated by the DCG team."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000066> "Ont/glossary: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000066> "TEA eligibility review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000066> <http://purl.obolibrary.org/obo/DASH-Onto_0000065>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000067> (TEA estimated resource and cost review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000067> "A TEA feasibility review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000067> "A review performed by a trusted environment for analysis team which determines costs and resources required to provide access to data items, and other requested services options (if applicable)."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000067> "Ont/glossary: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000067> "TEA estimated resource and cost review"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000067> <http://purl.obolibrary.org/obo/DASH-Onto_0000065>)
 
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000068> (TEA support review)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000068> "A TEA feasibility review that is TBD."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000068> "A review performed by a trusted evironment analysis team which evaluates support for the project."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000068> "DASH: Requested services review (SREV)"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DASH-Onto_0000068> "Ont/glossary: proposed."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000068> "TEA support review"@en)
@@ -655,6 +669,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000082> <http://purl.oboli
 # Class: <http://purl.obolibrary.org/obo/DASH-Onto_0000083> (Process DASH trusted environment for analysis instruction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "A DASH instruction to a DC, sent by an agreed method, requesting a TEA-related project component activity be completed."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "The output for the NextOperation can be:
+1 - for the TEA_PerformFeasibility
+2 - for the TEA_ProcessApplication
+3 - for the TEA_SignAgreement
+4 - for the TEA_EndProject"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DASH-Onto_0000083> "Process DASH trusted environment for analysis instruction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DASH-Onto_0000083> <http://purl.obolibrary.org/obo/DASH-Onto_0000009>)
 
