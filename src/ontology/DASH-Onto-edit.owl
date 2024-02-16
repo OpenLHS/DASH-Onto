@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/DASH-Onto.owl#"
      xml:base="http://purl.obolibrary.org/obo/DASH-Onto.owl"
-     xmlns:dce="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DASH-Onto.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2023-07-28/imports/OpenLHS-Core_import.owl"/>
-        <dcterms:description xml:lang="en">None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title xml:lang="en">Data Access Support Hub Ontology</dcterms:title>
+        <dcterms:description xml:lang="en">None</dcterms:description>
     </owl:Ontology>
     
 
@@ -972,7 +972,7 @@ false = An ethics assessment review was successful, documentation is complete an
         <owl:annotatedTarget>reportFundingAssessmentIssue</owl:annotatedTarget>
         <obo:DASH-Onto_0000088>Bool</obo:DASH-Onto_0000088>
         <obo:DASH-Onto_0000089>true = An issue arose during a funding review, documentation has not demonstrated approved funding.
-false = A funding review was successful and available funding has been demonstrated with appropiate documentation.</obo:DASH-Onto_0000089>
+false = A funding review was successful and available funding has been demonstrated with appropriate documentation.</obo:DASH-Onto_0000089>
     </owl:Axiom>
     
 
@@ -991,8 +991,8 @@ false = A funding review was successful and available funding has been demonstra
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000086"/>
         <owl:annotatedTarget>reportNDAIssue</owl:annotatedTarget>
         <obo:DASH-Onto_0000088>Bool</obo:DASH-Onto_0000088>
-        <obo:DASH-Onto_0000089>true = A non-dislcosure agreement review was not successful, a legal greement is insufficient in terms of ensuring confidentiality of DC-held data assets.
-false = A non-dislcosure agreement review was successful.</obo:DASH-Onto_0000089>
+        <obo:DASH-Onto_0000089>true = A non-disclosure agreement review was not successful, a legal agreement is insufficient in terms of ensuring confidentiality of DC-held data assets.
+false = A non-disclosure agreement review was successful.</obo:DASH-Onto_0000089>
     </owl:Axiom>
     
 
@@ -1011,8 +1011,8 @@ false = A non-dislcosure agreement review was successful.</obo:DASH-Onto_0000089
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000086"/>
         <owl:annotatedTarget>reportPCSIssue</owl:annotatedTarget>
         <obo:DASH-Onto_0000088>Bool</obo:DASH-Onto_0000088>
-        <obo:DASH-Onto_0000089>true = A privacy, confidentialty and security review was not successful, and modifications to the project protcol, Data Assembly Plan and project analysis may be required.
-false = A privacy, confidentialty and security review was successful.</obo:DASH-Onto_0000089>
+        <obo:DASH-Onto_0000089>true = A privacy, confidentiality and security review was not successful, and modifications to the project protocol, Data Assembly Plan and project analysis may be required.
+false = A privacy, confidentiality and security review was successful.</obo:DASH-Onto_0000089>
     </owl:Axiom>
     
 
@@ -1052,7 +1052,7 @@ false = A PET Review was successful</obo:DASH-Onto_0000089>
         <owl:annotatedTarget>reportPADataOutputReviewIssue</owl:annotatedTarget>
         <obo:DASH-Onto_0000088>Bool</obo:DASH-Onto_0000088>
         <obo:DASH-Onto_0000089>true = Intermediate outputs produced during a project analysis (including the processing of one or more D-SPD) have not passed a governance review, usually in relation to privacy of the data produced and which is intended to be released from the TEA.
-false =</obo:DASH-Onto_0000089>
+false = Intermediate outputs produced during a project analysis (including the processing of one or more D-SPD) have passed a governance review</obo:DASH-Onto_0000089>
     </owl:Axiom>
     
 
@@ -1338,5 +1338,5 @@ false = Members of a PRG have successfully completed orientation required by an 
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
