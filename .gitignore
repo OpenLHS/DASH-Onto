@@ -11,7 +11,6 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/reports/*
 src/ontology/DASH-Onto.owl
 src/ontology/DASH-Onto.obo
 src/ontology/DASH-Onto.json

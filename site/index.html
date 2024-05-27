@@ -1,0 +1,1076 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://OpenLHS.github.io/DASH-Onto/">
+      
+      
+      
+        <link rel="next" href="cite/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>Data Access Support Hub Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dash-onto-ontology-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Data Access Support Hub Ontology" class="md-header__button md-logo" aria-label="Data Access Support Hub Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Data Access Support Hub Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OpenLHS/DASH-Onto/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Data Access Support Hub Ontology" class="md-nav__button md-logo" aria-label="Data Access Support Hub Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Data Access Support Hub Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OpenLHS/DASH-Onto/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terms
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/ManageAutomatedTest.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terms
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="dash-onto-ontology-documentation">DASH-ONTO Ontology Documentation</h1>
+<p>Welcome to the DASH-ONTO documentation!</p>
+<p>You can find descriptions of the standard ontology engineering workflows <a href="odk-workflows/">here</a>.</p>
+<h2 id="terms">Terms</h2>
+<p>Terms and definition</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">term</th>
+<th style="text-align: left;">definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Agreement drafting</td>
+<td style="text-align: left;">A process which has as expected output a draft of an agreement.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agreement signature</td>
+<td style="text-align: left;">A planned process in which the required parties sign an agreement proposal to signify their agreement with the proposed terms. The resulting document is an agreement document.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Application for data to data custodian</td>
+<td style="text-align: left;">A process by which a project research group seeks to obtain permission to have access to data items from a data custodian.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH DC Monitor process</td>
+<td style="text-align: left;">A project component activity that permits DASH to restart DC-specific DC activities and communicate this fact to the DC, the latter taking appropriate actions in response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH Data advice</td>
+<td style="text-align: left;">A process by which a DASH User acquires information about metadata, data metrics and data provenance elements of data items, as well as selection functions.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH Eligibility decision</td>
+<td style="text-align: left;">A process that takes the results of site Eligibility Reviews and, based on discussions with the research group, comes to a final decision on whether a project should proceed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH Feasibility decision</td>
+<td style="text-align: left;">A process that has as a result a final decision regarding a set of data custodian feasibility reviews.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH Oversight</td>
+<td style="text-align: left;">A DASH coordination process in which a project workflow is directed to provide one of: DASH guidance to a PRG; allow for the completion of a form associated with an HDC application process; termination of a project, including a project debrief.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH Project advice</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH Support advice</td>
+<td style="text-align: left;">A process by which a DASH User acquires information about services offered by a data custodian.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH TEA Monitor process</td>
+<td style="text-align: left;">A project component activity that permits DASH to restart DC-specific TEA activities and communicate this fact to the DC, the latter taking appropriate actions in response.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH activity</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH eligibility advice</td>
+<td style="text-align: left;">A process by which a DASH User acquires information about eligibility requirements from a data custodian.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DASH-PRG Guidance</td>
+<td style="text-align: left;">A process having as participants DASH members and DASH users. It includes guided exploration and identification of services desired from project workflow contributors.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DC Agreement drafting</td>
+<td style="text-align: left;">A process which has as expected output a draft of a legal agreement  between a PRG and a DC (Glossary: Agreement drafting).</td>
+</tr>
+<tr>
+<td style="text-align: left;">DC Agreement resource and cost review</td>
+<td style="text-align: left;">A resource and cost review which finalises costs and resource use for inclusion within a legal agreement between a PRG and a DC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DC Agreement review</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">DC Agreement signature</td>
+<td style="text-align: left;">An agreement signature where the required parties are a data custodian and a project research group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Access Request Review</td>
+<td style="text-align: left;">A review performed by a DASH to confirm that information required by an HDC application process is complete and available for submission to the HDC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data Access Request completion</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data assembly</td>
+<td style="text-align: left;">A process to produce and validate a DC specfiic project dataset.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data availability cohort review</td>
+<td style="text-align: left;">A review performed by a data custodian team in collaboration with a project research group which assesses whether the [cohort] data item requirements defined by a project protocol can be fullfilled by a data custodian.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data availability extract review</td>
+<td style="text-align: left;">A review performed by a data custodian team in collaboration with a project research group which assesses whether the [extract] data item requirements defined by a project protocol can be fullfilled by a data custodian.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data controller review</td>
+<td style="text-align: left;">A review performed by a data controller team which evaluates project protocol alignment with its policies and, if applicable, delegated data control agreements</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian Project cohort preparation</td>
+<td style="text-align: left;">A data selection by which a project cohort identifier list is generated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian activity</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian agreement</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian data preparation</td>
+<td style="text-align: left;">A data processing generating a new data asset using a transformation function which has as input a set of datasets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian feasibility review</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian governance</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian governance review</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian privacy enhancing technique processing</td>
+<td style="text-align: left;">A sub-process of data assembly by which privacy enhancing technique functions are applied by a data custodian technical team to the dataset which is the output of the data preparation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data custodian project feasibility</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data eligibility review</td>
+<td style="text-align: left;">An eligibility review performed by a data custodian team which uses custodian-defined governance criteria to establish the right of the project research group to have a project protocol evaluated by the DCG team.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data estimated resource cost review</td>
+<td style="text-align: left;">A review performed by a data custodian team which determines resources and cost required to provide access to data items, and other requested services options (if applicable).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data placement</td>
+<td style="text-align: left;">A process by which a D-SPD is copied to another organisation's infrastructure or a TEA.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data processing</td>
+<td style="text-align: left;">A process by which a dataset is generated by applying a function to a set of datasets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data selection</td>
+<td style="text-align: left;">A data processing generating a new data asset using a selection function which has as input a set of datasets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data transformation</td>
+<td style="text-align: left;">A data processing generating a new data asset using a transformation function which has as input a set of datasets.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ethics assessment review</td>
+<td style="text-align: left;">A application element review which ensures that appropriate documentation arising from an ethics committee assessment was submitted as part of an application process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Funding review</td>
+<td style="text-align: left;">An application element review which ensures that an appropriate documentation from some funding source was submitted as part of an application process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Knowledge production</td>
+<td style="text-align: left;">A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Non-disclosure agreement review</td>
+<td style="text-align: left;">A review performed by a DC confirming the completion and usability of a non-disclosure agreement.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orientation validation</td>
+<td style="text-align: left;">A process by which one or more project research group members demonstrate knowledge of the requirements that a data custodian places on the use and handling of D-SPD provided to ensure continued good governance of that D-SPD and associated project analysis and publication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Privacy Enhancing Technique Review</td>
+<td style="text-align: left;">A review by a DC confirming that PET processing has been performed during a data assembly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Privacy, Confidentiality and Security Review</td>
+<td style="text-align: left;">A review with the goal of ensuring that privacy and patient-practitioner confidentiality are not compromised during processes directed by the project protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Process DASH data custodian instruction</td>
+<td style="text-align: left;">A DASH instruction to a DC, sent by an agreed method, requesting a DC-related project component activity be completed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Process DASH project research group instruction</td>
+<td style="text-align: left;">A DASH instruction to a PRG, sent by an agreed method, requesting a PRG-related project component activity be completed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Process DASH trusted environment for analysis instruction</td>
+<td style="text-align: left;">A DASH instruction to a DC, sent by an agreed method, requesting a TEA-related project component activity be completed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project Analysis</td>
+<td style="text-align: left;">A process enabling a PRG to analyse one or more D-SPD as input.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project Cohort evaluation</td>
+<td style="text-align: left;">A process by which a project cohort preparation takes place and the size of a project cohort identifier list is evaluated in the context of a project protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project Publication</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project analysis data output review</td>
+<td style="text-align: left;">A review conducted by a data controller team to evaluate whether a project analysis data output can be transferred to a different data custodian as requested by a PRG.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project analysis data processing</td>
+<td style="text-align: left;">A data processing by which a D-SPD is transformed by project analysts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project component activity</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project debrief</td>
+<td style="text-align: left;">A process performed by a DASH following the decision and action to end a project - in conjunction with a PRG and participating DCs - to learn lessons from that project.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project decision</td>
+<td style="text-align: left;">A process that takes the results of site Feasibility Reviews and, based on discussions with the project research group, comes to a final decision on whether a project should proceed to a formal data access request and governance review.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project publication drafting</td>
+<td style="text-align: left;">A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project publication review</td>
+<td style="text-align: left;">A review conducted by a organisation team to evaluate whether a project publication candidate can be made available outside the project research group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project research group activity</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project research group orientation validation</td>
+<td style="text-align: left;">A project research group activity by which one or more project research group members demonstrate knowledge of the requirements that a data custodian places on the use and handling of D-SPD provided to ensure continued good governance of that D-SPD and associated project analysis and publication.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Project submission</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Review</td>
+<td style="text-align: left;">A process in which a set of artefacts are used by an organisation team to establish whether a condition required by a process is met.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scientific assessment review</td>
+<td style="text-align: left;">An application element review which ensures that appropriate documentation arising from a Scientific Peer review assessment was submitted as part of an application process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scored data custodian cost</td>
+<td style="text-align: left;">A resource and cost valuation by a DASH based on aggregate data associated with similar projects performed in the past by that DASH.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Send signal</td>
+<td style="text-align: left;">A planned process by which a plan entity sends a specific signal to a specified channel.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Agreement</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Agreement drafting</td>
+<td style="text-align: left;">A process which has as expected output a draft of a legal agreement  between a PRG and a TEA provider.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Agreement resource and cost review</td>
+<td style="text-align: left;">A resource and cost review which finalises costs and resource use for inclusion within a legal agreement between a PRG and a TEA provider.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Agreement review</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Agreement signature</td>
+<td style="text-align: left;">An agreement signature where the required parties are those data custodians contributing to the TEA and a project research group.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Governance</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA Project feasibility</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA eligibility review</td>
+<td style="text-align: left;">An eligibility review performed by a TEA provider which uses custodian-defined governance criteria to establish the right of the project research group to have a project protocol evaluated by that TEA provider.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA estimated resource and cost review</td>
+<td style="text-align: left;">A resource and cost review which estimates the costs and resources expected to be used by a TEA provider in the fulfilment of a project protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA feasibility review</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEA support review</td>
+<td style="text-align: left;">A requested services review performed by a TEA provider.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trusted Environment for Analysis activity</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wait for signal</td>
+<td style="text-align: left;">A planned process by which a plan entity waits until a specific signal is available through a specified channel; then ends.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.tabs.link"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>
