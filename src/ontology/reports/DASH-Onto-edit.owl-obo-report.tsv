@@ -1,0 +1,28 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_definition	Knowledge production	IAO:0000115	A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.@en
+ERROR	duplicate_definition	Project publication drafting	IAO:0000115	A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.@en
+ERROR	duplicate_definition	Data transformation	IAO:0000115	A data processing generating a new data asset using a transformation function which has as input a set of datasets.@en
+ERROR	duplicate_definition	Data custodian data preparation	IAO:0000115	A data processing generating a new data asset using a transformation function which has as input a set of datasets.@en
+WARN	missing_definition	Project component activity	IAO:0000115	
+WARN	missing_definition	DASH activity	IAO:0000115	
+WARN	missing_definition	Data Access Request completion	IAO:0000115	
+WARN	missing_definition	DASH Project advice	IAO:0000115	
+WARN	missing_definition	Data custodian activity	IAO:0000115	
+WARN	missing_definition	Data custodian agreement	IAO:0000115	
+WARN	missing_definition	Data custodian governance	IAO:0000115	
+WARN	missing_definition	Data custodian project feasibility	IAO:0000115	
+WARN	missing_definition	Project research group activity	IAO:0000115	
+WARN	missing_definition	Project Publication	IAO:0000115	
+WARN	missing_definition	DC Agreement review	IAO:0000115	
+WARN	missing_definition	Data custodian feasibility review	IAO:0000115	
+WARN	missing_definition	Data custodian governance review	IAO:0000115	
+WARN	missing_definition	TEA Agreement review	IAO:0000115	
+WARN	missing_definition	TEA feasibility review	IAO:0000115	
+WARN	missing_definition	Trusted Environment for Analysis activity	IAO:0000115	
+WARN	missing_definition	TEA Agreement	IAO:0000115	
+WARN	missing_definition	TEA Governance	IAO:0000115	
+WARN	missing_definition	TEA Project feasibility	IAO:0000115	
+WARN	missing_definition	Project submission	IAO:0000115	
+WARN	missing_definition	description	IAO:0000115	
+WARN	missing_definition	license	IAO:0000115	
+WARN	missing_definition	title	IAO:0000115	

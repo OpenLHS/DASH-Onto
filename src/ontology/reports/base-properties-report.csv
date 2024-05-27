@@ -1,0 +1,10 @@
+value,def
+component of,The inverse relation of has component.
+component process of,The inverse relation of has component process.
+directs,A directs B := A is a directive information entity that guides an agent in the execution of B.
+fills,
+is about an aspect of,A is about an aspect of B := A is about a specifically dependent continuant that inheres in B.
+is directed by,The inverse relations of directs
+is filled by,The inverse relation of fills
+is maximally directed by,The inverse relation of maximally directs.
+maximally directs,"A maximally directs B := A directs B, and B is compliant to A."
