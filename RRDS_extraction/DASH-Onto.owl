@@ -16,11 +16,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DASH-Onto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-02-05/DASH-Onto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-02-06/DASH-Onto.owl"/>
         <dcterms:description xml:lang="en">None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title xml:lang="en">Data Access Support Hub Ontology</dcterms:title>
-        <owl:versionInfo>2024-02-05</owl:versionInfo>
+        <owl:versionInfo>2024-02-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3389,6 +3389,7 @@ false = DASH eligibility advice to a PRG was successful and the PRG is eligible.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000009"/>
         <obo:DASH-Onto_0000086>NextOperation</obo:DASH-Onto_0000086>
+        <obo:DASH-Onto_0000086>usedLocations</obo:DASH-Onto_0000086>
         <obo:IAO_0000115 xml:lang="en">A DASH coordination process in which a project workflow is directed to provide one of: DASH guidance to a PRG; allow for the completion of a form associated with an HDC application process; termination of a project, including a project debrief.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">DASH: DASH Q&amp;A (QUEST)</rdfs:comment>
         <rdfs:comment xml:lang="en">DASH: Guidance catch-all (DG)</rdfs:comment>
@@ -3405,6 +3406,13 @@ false = DASH eligibility advice to a PRG was successful and the PRG is eligible.
         <obo:DASH-Onto_0000089>1 = OVR_PerformGuidance: A DASH should perform DASH Guidance with a PRG.
 2 = OVR_CompleteDAR: A DASH should ensure the completion and validity of a shared data access request form for a project.
 3 = OVR_EndProject: A DASH should move to enforce an end to a project by all participants.</obo:DASH-Onto_0000089>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/DASH-Onto_0000086"/>
+        <owl:annotatedTarget>usedLocations</owl:annotatedTarget>
+        <obo:DASH-Onto_0000088>string</obo:DASH-Onto_0000088>
+        <obo:DASH-Onto_0000090 xml:lang="en">A final list of locations who were partner organisations in a project and will be involved in a project debrief. (Format and coding of string to be decided.)</obo:DASH-Onto_0000090>
     </owl:Axiom>
     
 
@@ -5150,7 +5158,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-        <rdfs:subClassOf rdf:nodeID="genid229"/>
+        <rdfs:subClassOf rdf:nodeID="genid230"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -5161,14 +5169,14 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid229">
+    <owl:Restriction rdf:nodeID="genid230">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid229"/>
+        <owl:annotatedTarget rdf:nodeID="genid230"/>
         <owl:versionInfo>09/09/2017</owl:versionInfo>
     </owl:Axiom>
     
