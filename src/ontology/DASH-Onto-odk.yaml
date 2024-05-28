@@ -18,5 +18,4 @@ import_group:
 robot_report:
   custom_sparql_exports:
     - base-classes-report
-    - base-properties-report
 robot_java_args: "-Xmx8G"
