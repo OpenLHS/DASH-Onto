@@ -7,7 +7,7 @@ Welcome to the DASH-ONTO documentation!
 You can find descriptions of the standard ontology engineering workflows [here](odk-workflows/index.md).
 
 
-## Terms
+## Glossary
 
 Terms and definition
 
