@@ -1342,6 +1342,16 @@ false = Members of a PRG have successfully completed orientation required by an 
         <obo:IAO_0000115 xml:lang="en">A project component activity that permits DASH to restart DC-specific DC activities and communicate this fact to the DC, the latter taking appropriate actions in response.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">DASH DC Monitor process</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DASH-Onto_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DASH-Onto_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process by which a plan entity cleans (erases) the specified signal.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Clean signal</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
