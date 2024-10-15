@@ -3,7 +3,12 @@ ERROR	duplicate_definition	Knowledge production	IAO:0000115	A process by which p
 ERROR	duplicate_definition	Project publication drafting	IAO:0000115	A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.@en
 ERROR	duplicate_definition	Data transformation	IAO:0000115	A data processing generating a new data asset using a transformation function which has as input a set of datasets.@en
 ERROR	duplicate_definition	Data custodian data preparation	IAO:0000115	A data processing generating a new data asset using a transformation function which has as input a set of datasets.@en
-WARN	missing_definition	Project component activity	IAO:0000115	
+ERROR	missing_label	obo:DADAGEMO_0000007	rdfs:label	
+ERROR	missing_label	obo:DADAGEMO_0000008	rdfs:label	
+ERROR	missing_label	obo:DADAGEMO_0000009	rdfs:label	
+WARN	missing_definition	obo:DADAGEMO_0000007	IAO:0000115	
+WARN	missing_definition	obo:DADAGEMO_0000008	IAO:0000115	
+WARN	missing_definition	obo:DADAGEMO_0000009	IAO:0000115	
 WARN	missing_definition	DASH activity	IAO:0000115	
 WARN	missing_definition	Data Access Request completion	IAO:0000115	
 WARN	missing_definition	DASH Project advice	IAO:0000115	
@@ -26,3 +31,4 @@ WARN	missing_definition	Project submission	IAO:0000115
 WARN	missing_definition	description	IAO:0000115	
 WARN	missing_definition	license	IAO:0000115	
 WARN	missing_definition	title	IAO:0000115	
+INFO	missing_superclass	obo:DADAGEMO_0000009	rdfs:subClassOf	
