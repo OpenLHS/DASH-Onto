@@ -1,5 +1,12 @@
-http://purl.obolibrary.org/obo/DASH-Onto_0000080
-http://purl.obolibrary.org/obo/DASH-Onto_0000081
+http://purl.obolibrary.org/obo/DADAGEMO_0000005
+http://purl.obolibrary.org/obo/DADAGEMO_0000006
+http://purl.obolibrary.org/obo/DADAGEMO_0000007
+http://purl.obolibrary.org/obo/DADAGEMO_0000008
+http://purl.obolibrary.org/obo/DADAGEMO_0000009
+http://purl.obolibrary.org/obo/DADAGEMO_0000010
+http://purl.obolibrary.org/obo/DADAGEMO_0000011
+http://purl.obolibrary.org/obo/DADAGEMO_0000012
+http://purl.obolibrary.org/obo/DADAGEMO_0000013
 http://purl.obolibrary.org/obo/DASH-Onto_0000043
 http://purl.obolibrary.org/obo/DASH-Onto_0000062
 http://purl.obolibrary.org/obo/DASH-Onto_0000082
@@ -42,4 +49,4 @@ http://purl.obolibrary.org/obo/DASH-Onto_0000015
 http://purl.obolibrary.org/obo/DASH-Onto_0000016
 http://purl.obolibrary.org/obo/DASH-Onto_0000019
 http://purl.obolibrary.org/obo/DASH-Onto_0000035
-http://purl.obolibrary.org/obo/DASH-Onto_0000087
+

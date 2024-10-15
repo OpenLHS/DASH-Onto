@@ -7,14 +7,15 @@ documentation:
 release_artefacts:
   - full
   - base
-primary_release: full
+  - non-classified
+primary_release: non-classified
 export_formats:
   - owl
 import_group:
   products:
-    - id: OpenLHS-Core
+    - id: DADAGEMO
       module_type: mirror
-      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OpenLHS-Core/main/OpenLHS-Core.owl"
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/DADAGEMO/main/DADAGEMO.owl"
 robot_report:
   custom_sparql_exports:
     - base-classes-report

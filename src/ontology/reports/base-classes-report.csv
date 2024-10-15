@@ -2,7 +2,6 @@ IRI,label,def
 DASH-Onto_0000003,Agreement drafting,A process which has as expected output a draft of an agreement.
 DASH-Onto_0000006,Agreement signature,A planned process in which the required parties sign an agreement proposal to signify their agreement with the proposed terms. The resulting document is an agreement document.
 DASH-Onto_0000001,Application for data to data custodian,A process by which a project research group seeks to obtain permission to have access to data items from a data custodian.
-DASH-Onto_0000087,Clean signal,A planned process by which a plan entity cleans (erases) the specified signal.
 DASH-Onto_0000085,DASH DC Monitor process,"A project component activity that permits DASH to restart DC-specific DC activities and communicate this fact to the DC, the latter taking appropriate actions in response."
 DASH-Onto_0000013,DASH Data advice,"A process by which a DASH User acquires information about metadata, data metrics and data provenance elements of data items, as well as selection functions."
 DASH-Onto_0000017,DASH Eligibility decision,"A process that takes the results of site Eligibility Reviews and, based on discussions with the research group, comes to a final decision on whether a project should proceed."
@@ -54,7 +53,6 @@ DASH-Onto_0000041,Project Cohort evaluation,A process by which a project cohort 
 DASH-Onto_0000042,Project Publication,
 DASH-Onto_0000060,Project analysis data output review,A review conducted by a data controller team to evaluate whether a project analysis data output can be transferred to a different data custodian as requested by a PRG.
 DASH-Onto_0000033,Project analysis data processing,A data processing by which a D-SPD is transformed by project analysts.
-DASH-Onto_0000002,Project component activity,
 DASH-Onto_0000035,Project debrief,A process performed by a DASH following the decision and action to end a project - in conjunction with a PRG and participating DCs - to learn lessons from that project.
 DASH-Onto_0000039,Project decision,"A process that takes the results of site Feasibility Reviews and, based on discussions with the project research group, comes to a final decision on whether a project should proceed to a formal data access request and governance review."
 DASH-Onto_0000043,Project publication drafting,A process by which project research group members include a project analysis data output into an artefact for release to the wider interested community.
@@ -65,7 +63,6 @@ DASH-Onto_0000073,Project submission,
 DASH-Onto_0000044,Review,A process in which a set of artefacts are used by an organisation team to establish whether a condition required by a process is met.
 DASH-Onto_0000061,Scientific assessment review,An application element review which ensures that appropriate documentation arising from a Scientific Peer review assessment was submitted as part of an application process.
 DASH-Onto_0000015,Scored data custodian cost,A resource and cost valuation by a DASH based on aggregate data associated with similar projects performed in the past by that DASH.
-DASH-Onto_0000081,Send signal,A planned process by which a plan entity sends a specific signal to a specified channel.
 DASH-Onto_0000070,TEA Agreement,
 DASH-Onto_0000005,TEA Agreement drafting,A process which has as expected output a draft of a legal agreement  between a PRG and a TEA provider.
 DASH-Onto_0000063,TEA Agreement resource and cost review,A resource and cost review which finalises costs and resource use for inclusion within a legal agreement between a PRG and a TEA provider.
@@ -78,4 +75,3 @@ DASH-Onto_0000067,TEA estimated resource and cost review,A resource and cost rev
 DASH-Onto_0000065,TEA feasibility review,
 DASH-Onto_0000068,TEA support review,A requested services review performed by a TEA provider.
 DASH-Onto_0000069,Trusted Environment for Analysis activity,
-DASH-Onto_0000080,Wait for signal,A planned process by which a plan entity waits until a specific signal is available through a specified channel; then ends.
