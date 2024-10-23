@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/DASH-Onto/imports/DADAGEMO_import.owl>
-<http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-10-15/imports/DADAGEMO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/DADAGEMO/releases/2024-10-15/DADAGEMO.owl>)
-Annotation(owl:versionInfo "2024-10-15")
+<http://purl.obolibrary.org/obo/DASH-Onto/releases/2024-10-23/imports/DADAGEMO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/DADAGEMO/releases/2024-10-23/DADAGEMO.owl>)
+Annotation(owl:versionInfo "2024-10-23")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -1887,19 +1887,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/DADAGEMO_0000005> ObjectExactCardinal
 
 # Class: <http://purl.obolibrary.org/obo/DADAGEMO_0000006> (clean signal)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DADAGEMO_0000006> "An unit of work process by which a plan entity cleans (erases) the specified signal."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/DADAGEMO_0000011> "string") Annotation(<http://purl.obolibrary.org/obo/DADAGEMO_0000012> "The associated condition of the signals that have to be cleaned.") <http://purl.obolibrary.org/obo/DADAGEMO_0000010> <http://purl.obolibrary.org/obo/DADAGEMO_0000006> "cleanCondition")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DADAGEMO_0000006> "An unit of work process by which a plan entity cleans (erases) all signal associated to the specified condition."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DADAGEMO_0000006> "clean signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DADAGEMO_0000006> <http://purl.obolibrary.org/obo/DADAGEMO_0000005>)
 
 # Class: <http://purl.obolibrary.org/obo/DADAGEMO_0000007> (send signal)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DADAGEMO_0000007> "An unit of work process by which a plan entity sends a specific signal to a specified channel."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/DADAGEMO_0000011> "string") Annotation(<http://purl.obolibrary.org/obo/DADAGEMO_0000012> "The associated condition of the sent signal.") <http://purl.obolibrary.org/obo/DADAGEMO_0000010> <http://purl.obolibrary.org/obo/DADAGEMO_0000007> "signalCondition")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DADAGEMO_0000007> "An unit of work process by which a plan entity sends a signal associated to the specified condition."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DADAGEMO_0000007> "send signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DADAGEMO_0000007> <http://purl.obolibrary.org/obo/DADAGEMO_0000005>)
 
 # Class: <http://purl.obolibrary.org/obo/DADAGEMO_0000008> (wait for signal)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DADAGEMO_0000008> "An unit of work process by which a plan entity waits until a specific signal is available through a specified channel; then ends."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/DADAGEMO_0000011> "string") Annotation(<http://purl.obolibrary.org/obo/DADAGEMO_0000012> "The associated condition of the sent signal.") <http://purl.obolibrary.org/obo/DADAGEMO_0000010> <http://purl.obolibrary.org/obo/DADAGEMO_0000008> "waitCondition")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DADAGEMO_0000008> "An unit of work process by which a plan entity waits until a signal associated to the specified condition is sent; then ends."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DADAGEMO_0000008> "wait for signal"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DADAGEMO_0000008> <http://purl.obolibrary.org/obo/DADAGEMO_0000005>)
 
